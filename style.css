@@ -1,0 +1,68 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 80vh;
+}
+
+.game {
+  position: relative;
+  width: 264px;
+  height: 264px;
+}
+
+.game-table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  padding: 5px;
+  border: 2px solid black;
+  width: 250px;
+  height: 250px;
+}
+
+.chips {
+  position: relative;
+  top: 12px;
+  left: 12px;
+}
+
+.chip-box,
+.chip-box-empty {
+  width: 55px;
+  height: 55px;
+  border: 2px solid rgb(193, 73, 73);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chip {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f77777;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.win {
+  background-color: #22b455;
+  height: 100%;
+}
+
+.empty {
+  background-color: transparent;
+  color: transparent;
+}
